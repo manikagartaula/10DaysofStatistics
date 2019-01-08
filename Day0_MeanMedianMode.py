@@ -10,20 +10,19 @@ Statistics Challenge:  Calculate mean, median and mode for the input
 import numpy as np
 import statistics as stat
 
-n = int(input("Enter number of integers in array: "))
-numbers = input("Enter the integers in array separated by a space: ")
+n = int(input())
+numbers = input()
 num = list(numbers.split())
 
 values = [int(value) for value in num]
-print(values)
 
 #Calculate mean
 mean = np.mean(values)
-print("Mean: %.1f" % mean)
+print("%.1f" % mean)
 
 #Calculate median
 median = stat.median(values)
-print("Median: %.1f" % median)
+print("%.1f" % median)
 
 #Calculate mode
 def mode(array):
@@ -32,4 +31,4 @@ def mode(array):
 
 modes = mode(values)
 min_mode = min(mod for mod in modes)
-print("Mode:", min_mode)
+print(min_mode)
