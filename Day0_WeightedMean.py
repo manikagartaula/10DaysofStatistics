@@ -5,9 +5,9 @@ Created on Mon Jan  7 21:40:57 2019
 @author: Manika
 Statistics Challenge: Calculate weighted mean of an array
 """
-n = int(input("Enter number of integers in the array: "))
-numbers = input("Enter an array of integers: ")
-weights = input("Enter the weight of each integer: ")
+n = int(input())
+numbers = input()
+weights = input()
 
 number = list(numbers.split())
 num = [int(n) for n in number]
@@ -25,4 +25,4 @@ def weighted_mean(array, wgt, n):
     return meansum/weightsum
 
 wt_mean = weighted_mean(num, wt, n)
-print("The weighted mean is %.2f" % wt_mean)
+print("%.1f" % wt_mean)
